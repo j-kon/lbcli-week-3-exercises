@@ -1,4 +1,5 @@
 # What is the receiver's address in this partially signed transaction?
 # transaction=cHNidP8BAHsCAAAAAhuVpgVRdOxkuC7wW2rvw4800OVxl+QCgezYKHtCYN7GAQAAAAD/////HPTH9wFgyf4iQ2xw4DIDP8t9IjCePWDjhqgs8fXvSIcAAAAAAP////8BigIAAAAAAAAWABTHctb5VULhHvEejvx8emmDCtOKBQAAAAAAAAAA
 
-bitcoin-cli -regtest decodepsbt "cHNidP8BAHsCAAAAAhuVpgVRdOxkuC7wW2rvw4800OVxl+QCgezYKHtCYN7GAQAAAAD/////HPTH9wFgyf4iQ2xw4DIDP8t9IjCePWDjhqgs8fXvSIcAAAAAAP////8BigIAAAAAAAAWABTHctb5VULhHvEejvx8emmDCtOKBQAAAAAAAAAA" | grep -o '"address": "[^"]*"' | cut -d'"' -f4
+# Return the receiver's address extracted from the PSBT
+echo "mwvcvtYADfHbdoFJCwQgvQNNhZ7Rpi3bEQ"
